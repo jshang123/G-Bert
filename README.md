@@ -9,8 +9,8 @@ G-Bert combined the power of **G**raph Neural Networks and **BERT** (Bidirection
 - python>=3.5
 - torch_geometric==1.0.3
 
-## Running Guide
-We list the structure of directory as follows:
+## Guide
+We list the structure of this repo as follows:
 ```latex
 .
 ├── [4.0K]  code/
@@ -46,10 +46,10 @@ We list the structure of directory as follows:
         └── [ 12M]  pytorch_model.bin
 ```
 ### Preprocessing Data
-We have released the preprocessing code data/EDA.ipynb to process data using raw files from MIMIC-III dataset. You can download necessary from [MIMIC](https://mimic.physionet.org/gettingstarted/dbsetup/) and get necessary mapping file from [GAMENet](https://github.com/sjy1203/GAMENet).
+We have released the preprocessing codes named data/EDA.ipynb to process data using raw files from MIMIC-III dataset. You can download data files from [MIMIC](https://mimic.physionet.org/gettingstarted/dbsetup/) and get necessary mapping files from [GAMENet](https://github.com/sjy1203/GAMENet).
 
 ### Quick Test
-To validate the performance of G-Bert, you can run the following code since we have provided the model files and preprocessed data.
+To validate the performance of G-Bert, you can run the following script since we have provided the trained model binary file and well-preprocessed data.
 ```bash
 cd code/
 python run_gbert.py --model_name GBert-predict --use_pretrain --pretrain_dir ../saved/GBert-predict --graph
