@@ -54,6 +54,18 @@ To validate the performance of G-Bert, you can run the following script since we
 cd code/
 python run_gbert.py --model_name GBert-predict --use_pretrain --pretrain_dir ../saved/GBert-predict --graph
 ```
+## Cite 
+
+Please cite our paper if you find this code helpful:
+
+```
+@article{shang2019pre,
+  title={Pre-training of Graph Augmented Transformers for Medication Recommendation},
+  author={Shang, Junyuan and Ma, Tengfei and Xiao, Cao and Sun, Jimeng},
+  journal={arXiv preprint arXiv:1906.00346},
+  year={2019}
+}
+```
 
 ## Acknowledgement
 Many thanks to the open source repositories and libraries to speed up our coding progress.
